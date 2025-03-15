@@ -1,7 +1,6 @@
 ## Kyedae Counter Bot
 A discord bot version of the [kyedae counter](https://github.com/Genrevvv/kyedae_counter) GUI program.
 
-
 ##  Kyedae Counter Bot Commands
 ```
 Commands                    Description
@@ -23,3 +22,12 @@ Commands                    Description
 
 >goodnight                  Force the bot to shutdown
 ```
+## How to run
+1. Create your Discord bot and copy its token.
+2. Create a .env file in the project directory
+3. Add the following line in the .env file, replace [your'bots token] with your actual bot token:
+   ```
+   DISCORD_TOKEN=[your bot's token]
+5. Run the bot with the following command:
+   ```
+   python kyedae_counter_bot.py
