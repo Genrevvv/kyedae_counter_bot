@@ -45,25 +45,15 @@ async def connect(ctx, usernameInput):
     client.on(CommentEvent)(on_comment)
     client.on(LiveEndEvent)(on_live_end)
 
-    attempt = 0
-    
     await ctx.send(f"Connecting to **{username}**'s live")
 
-    while True:
-        try:
-            await client.connect() 
-        except Exception as e:
-            global connected
-            connected = False
-
-            if attempt == 4:
-                break
-                
-            attempt += 1
-            await asyncio.sleep(3)
-            await ctx.send(f"Reconnecting to **{username}**'s live")
+    try:
+        await client.connect() 
+    except Exception as e:
+        global connected
+        connected = False
             
-    await ctx.send(f"**Failed:** Unable to connect on **{username}**'s live  **):**")
+        await ctx.send(f"**Failed:** Unable to connect on **{username}**'s live  **):**")
 
 
 @bot.command()
