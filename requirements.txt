@@ -1,0 +1,5 @@
+discord.py==2.5.2
+fuzzywuzzy==0.18.0
+python-dotenv==1.0.1
+TikTokLive==6.4.4
+TikTokLive==6.4.4
