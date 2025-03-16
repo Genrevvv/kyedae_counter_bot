@@ -27,7 +27,7 @@ Commands                    Description
 2. Create a .env file in the project directory
 3. Add the following line in the .env file, replace [your'bots token] with your actual bot token:
    ```
-   BOT_TOKEN=[your bot's token]
+   DISCORD_TOKEN=[your bot's token]
 5. Run the bot with the following command:
    ```
    python kyedae_counter_bot.py
