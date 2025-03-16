@@ -17,7 +17,7 @@ def check_kyedae_comment(string_comment):
             
             if word == spelling:
                 return True
-            elif fuzz.ratio(word, spelling) >= 70 and word.startswith("k") and len(word) >= 5:
+            elif fuzz.ratio(word, spelling) >= 75 and word.startswith("k") and len(word) >= 5:
                 print(f"\033[1mfuzz ratio: {fuzz.ratio(word, spelling)}\033[0m")
                 return True
 
